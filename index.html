@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wedding Venue</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navbar Section -->
+
+    <div class="top-section">
+      <div class="text">India's most popular wedding platform</div>
+      <ul class="nav-links">
+        <div class="cities">
+          <select name="Cities">
+            <optgroup label="Top Cities">
+              <option>All Cities</option>
+              <option>Delhi NCR</option>
+              <option>Mumbai</option>
+              <option>Chennai</option>
+              <option>Pune</option>
+              <option>Lucknow</option>
+              <option>Jaipur</option>
+              <option>Kolkata</option>
+              <option>Bangalore</option>
+              <option>Hyderabad</option>
+            </optgroup>
+            <optgroup label="Popular Cities">
+              <option>Gurgaon</option>
+              <option>Goa</option>
+              <option>Udaipur</option>
+              <option>Chandigarh</option>
+              <option>Jim Corbett</option>
+              <option>Ahmedabad</option>
+              <option>Indore</option>
+              <option>Agra</option>
+              <option>Kanpur</option>
+              <option>Kochi</option>
+            </optgroup>
+            <optgroup label="Other Cities">
+              <option>Nagpur</option>
+              <option>Dehradun</option>
+              <option>Thane</option>
+              <option>Surat</option>
+              <option>Vadodara</option>
+              <option>Raipur</option>
+              <option>Mysore</option>
+              <option>Hubli</option>
+              <option>Dhitar</option>
+              <option>Torangallu</option>
+            </optgroup>
+            <optgroup label="States">
+              <option>Kerala</option>
+              <option>Rajasthan</option>
+              <option>Himachal Pradesh</option>
+              <option>Maharashtra</option>
+            </optgroup>
+            <optgroup label="International Cities">
+              <option>Dubai</option>
+              <option>Thailand</option>
+              <option>Bali</option>
+              <option>Abu Dhabi</option>
+            </optgroup>
+          </select>
+        </div>
+      </ul>
+      <div class="language-selector">
+        <select id="language">
+          <option value="en" data-icon="🇺🇸">English</option>
+          <option value="hi" data-icon="🇮🇳">हिन्दी (Hindi)</option>
+          <option value="es" data-icon="🇪🇸">Español (Spanish)</option>
+          <option value="fr" data-icon="🇫🇷">Français (French)</option>
+          <option value="de" data-icon="🇩🇪">Deutsch (German)</option>
+          <option value="cn" data-icon="🇨🇳">中文 (Chinese)</option>
+          <option value="jp" data-icon="🇯🇵">日本語 (Japanese)</option>
+          <option value="ar" data-icon="🇸🇦">العربية (Arabic)</option>
+        </select>
+      </div>
+    </div>
+
+    <nav class="navbar">
+      <div class="logo">
+        <img
+          src="https://th.bing.com/th/id/R.93e2bf5cd14dc460ed2c7ff9c24334c2?rik=WJLxB4xI8xPw3w&riu=http%3a%2f%2flh3.googleusercontent.com%2fHcQNhKAOGBvV0OXP-LLrqltZulaXbyK3A-Am2i1JGH1NKIs3RvIqjJa7m-kNyHaNhujI%3dw300&ehk=Dyl5WRFeMwRHm6nsxMzgEtqCTVUiOssp%2fvv4YsBhpF8%3d&risl=&pid=ImgRaw&r=0"
+          alt="logo"
+        />
+        <span>WedMeGood</span>
+      </div>
+      <ul class="nav-links">
+        <li>
+          <a href="#">Venues</a>
+          <div class="dropdown">
+            <div class="dropdown-section">
+              <h4>By Type</h4>
+              <ul>
+                <li>Banquet Halls</li>
+                <li>Marriage Garden / Lawns</li>
+                <li>Wedding Resorts</li>
+                <li>Small Function / Party Halls</li>
+                <li>Destination Wedding Venues</li>
+                <li>Kalyana Mandapams</li>
+                <li>4 Star & Above Wedding Hotels</li>
+              </ul>
+            </div>
+            <div class="dropdown-section">
+              <h4>By City</h4>
+              <ul>
+                <li>Mumbai</li>
+                <li>Bangalore</li>
+                <li>Pune</li>
+                <li>Kolkata</li>
+                <li>Jaipur</li>
+                <li>Lucknow</li>
+                <li>Hyderabad</li>
+              </ul>
+            </div>
+            <div class="dropdown-section">
+              <h4>Destination Wedding Venues</h4>
+              <ul>
+                <li>Goa</li>
+                <li>Jaipur</li>
+                <li>Udaipur</li>
+                <li>Jodhpur</li>
+                <li>Thailand</li>
+                <li>Jim Corbett</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li><a href="#">Vendors</a></li>
+        <li><a href="#">Photos</a></li>
+        <li><a href="#">Real Weddings</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">E-Invites</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        
+      </ul>
+      <div class="auth-buttons">
+        <button>Write A Review</button>
+        <button>Download App</button>
+        <button>Log In</button>
+      </div>
+    </nav>
+    <div class="hero">
+      <!-- Hero Section -->
+      <section class="hero">
+        <video autoplay loop muted playsinline class="video">
+          <source src="weds.mp4" type="video/mp4" />
+        </video>      
+      </section>
+    </div>
+    <section class="marriage-section">
+      <div class="marriage-container">
+          <div class="marriage-image-wrapper">
+              <img src="marrage_somil.jpg" alt="Featured Wedding Moment" class="marriage-img">
+              <div class="image-overlay">
+                  <h2 class="overlay-title">Your Banquet Hall</h2>
+                  <p class="overlay-text">Capture the magic of your special day</p>
+              </div>
+          </div>
+      </div>
+  </section>
+    <!-- Venue Details Section -->
+    <section class="venue-details">
+      <h2>About the Venue</h2>
+      <p>
+        Jayamahal Palace Hotel is a heritage property offering a royal
+        experience for your special events.
+      </p>
+      <ul>
+        <li>Location: Near Cantonment Railway Station, Bangalore</li>
+        <li>Capacity: 500+ Guests</li>
+        <li>Price: Starts at ₹2,000 per plate</li>
+      </ul>
+    </section>
+
+    <section class="wedding-categories">
+      <h2>Wedding Categories</h2>
+      <div class="categories-container">
+        <div class="category-box" style="background-color: #d6e4ff">
+          <img
+            src="https://th.bing.com/th/id/OIP.g91nGEVPYBbB7pYutxdrKwAAAA?rs=1&pid=ImgDetMain"
+            alt="Venues"
+          />
+          <div class="category-text">
+            <h3>Venues ></h3>
+            <p>Banquet Halls, Marriage Garden / Lawn...</p>
+          </div>
+        </div>
+
+        <div class="category-box" style="background-color: #fad2cf">
+          <img
+            src="https://th.bing.com/th/id/OIP.HGCtvw299yRg8x-Nb4XS1wAAAA?rs=1&pid=ImgDetMain"
+            alt="Makeup"
+          />
+          <div class="category-text">
+            <h3>Makeup ></h3>
+            <p>Bridal Makeup, Family Makeup</p>
+          </div>
+        </div>
+
+        <div class="category-box" style="background-color: #fde9d9">
+          <img
+            src="https://i.pinimg.com/originals/32/f8/ee/32f8ee86f0ba8c33627d0b3f6d700930.jpg"
+            alt="Planning & Decor"
+          />
+          <div class="category-text">
+            <h3>Planning & Decor ></h3>
+            <p>Wedding Planners, Decorators</p>
+          </div>
+        </div>
+
+        <div class="category-box" style="background-color: #fce1cc">
+          <img
+            src="https://thumbs.dreamstime.com/z/beautiful-indian-wedding-setup-stage-decorations-flowers-beautiful-indian-wedding-setup-stage-decorations-254683979.jpg"
+            alt="Photographers"
+          />
+          <div class="category-text">
+            <h3>Photographers ></h3>
+            <p>Photographers</p>
+          </div>
+        </div>
+
+        <div class="category-box" style="background-color: #d6e4ff">
+          <img
+            src="https://th.bing.com/th/id/OIP.38FfFU86gD2rld-0WXDHMQAAAA?w=450&h=450&rs=1&pid=ImgDetMain"
+            alt="Pre Wedding Shoot"
+          />
+          <div class="category-text">
+            <h3>Pre Wedding Shoot ></h3>
+            <p>Pre Wedding Shoot Locations</p>
+          </div>
+        </div>
+
+        <div class="category-box" style="background-color: #eae7d6">
+          <img
+            src="https://i.pinimg.com/originals/41/12/b4/4112b4af3d812ecc6b8e90b40d362b63.jpg"
+            alt="Bridal Wear"
+          />
+          <div class="category-text">
+            <h3>Bridal Wear ></h3>
+            <p>Bridal Lehengas, Kanjeevaram / Silk Sa...</p>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="view-all">View all Categories ➤</a>
+    </section>
+
+    <!-- Image Gallery Section -->
+    <section class="gallery">
+      <h1 class="text">Venue Gallery</h1>
+      <div class="gallery-container">
+        <button class="prev-btn">❮</button>
+        <div class="image-wrapper">
+          <img
+            src="https://www.theweddingblissthailand.com/wp-content/uploads/2018/11/Destination-Wedding-In-Phuket-With-Two-Gorgeous-Designs-The-Wedding-Bliss-Thailand.jpg"
+            alt="Venue Image"
+          />
+          <img
+            src="https://th.bing.com/th/id/R.c50a3c192c4c2d774e3e8fb427f14f1f?rik=XiN2Q2HCE0NAIQ&riu=http%3a%2f%2fwww.jetfeteblog.com%2fwp-content%2fuploads%2f2015%2f10%2fdestination-weddings2.jpg&ehk=7D74k9oI2LRzZT0M0ymTFxq33hPj%2f9sQM4%2brTlbwUZc%3d&risl=&pid=ImgRaw&r=0"
+            alt="Venue Image"
+          />
+          <img
+            src="https://th.bing.com/th/id/R.04f6cb8c17a8222cb73b094bbd8388d8?rik=1wcIZF9sJYTMBA&riu=http%3a%2f%2fblog.brandonkidd.net%2fwp-content%2fuploads%2f2014%2f07%2fviceroy-riviera-maya-destination-wedding-photo_0061.jpg&ehk=Fn%2fJljvFajWa05g6IaMqBylgQdxXDw0SJizHTCAtTiM%3d&risl=&pid=ImgRaw&r=0"
+            alt="Venue Image"
+          />
+          <img
+            src="https://www.findbanquet.com/blog/wp-content/uploads/2021/01/andaman-2048x1114.jpg"
+            alt="Venue Image"
+          />
+          <img
+            src="https://s3.scoopwhoop.com/anj/sw/ea0d4fe1-0551-4ed1-9ce4-2a22c0a2b569.jpg"
+            alt="Venue Image"
+          />
+          <img
+            src="https://media.weddingz.in/images/b54fdaf73a6b6c1193505890a3135bd2/rajasthan-destination-wedding-wedding-in-jaisalmer-jaipur.jpg"
+            alt="Venue Image"
+          />
+          <img
+            src="https://www.theweddingblissthailand.com/wp-content/uploads/2018/11/Destination-Wedding-In-Phuket-With-Two-Gorgeous-Designs-The-Wedding-Bliss-Thailand.jpg"
+            alt="Venue Image"
+          />
+          <img
+            src="https://th.bing.com/th/id/R.c50a3c192c4c2d774e3e8fb427f14f1f?rik=XiN2Q2HCE0NAIQ&riu=http%3a%2f%2fwww.jetfeteblog.com%2fwp-content%2fuploads%2f2015%2f10%2fdestination-weddings2.jpg&ehk=7D74k9oI2LRzZT0M0ymTFxq33hPj%2f9sQM4%2brTlbwUZc%3d&risl=&pid=ImgRaw&r=0"
+            alt="Venue Image"
+          />
+          <img
+            src="https://th.bing.com/th/id/R.04f6cb8c17a8222cb73b094bbd8388d8?rik=1wcIZF9sJYTMBA&riu=http%3a%2f%2fblog.brandonkidd.net%2fwp-content%2fuploads%2f2014%2f07%2fviceroy-riviera-maya-destination-wedding-photo_0061.jpg&ehk=Fn%2fJljvFajWa05g6IaMqBylgQdxXDw0SJizHTCAtTiM%3d&risl=&pid=ImgRaw&r=0"
+            alt="Venue Image"
+          />
+          <img
+            src="https://www.findbanquet.com/blog/wp-content/uploads/2021/01/andaman-2048x1114.jpg"
+            alt="Venue Image"
+          />
+          <img
+            src="https://s3.scoopwhoop.com/anj/sw/ea0d4fe1-0551-4ed1-9ce4-2a22c0a2b569.jpg"
+            alt="Venue Image"
+          />
+          <img
+            src="https://media.weddingz.in/images/b54fdaf73a6b6c1193505890a3135bd2/rajasthan-destination-wedding-wedding-in-jaisalmer-jaipur.jpg"
+            alt="Venue Image"
+          />
+        </div>
+        <button class="next-btn">❯</button>
+      </div>
+    </section>
+
+    <section class="wedding-stories">
+      <h2>Real Wedding Stories</h2>
+      <div class="stories-container">
+        <div class="story-box">
+          <img
+            src="https://wallpaperaccess.com/full/1317062.jpg"
+            alt="Astha and Chirag"
+          />
+          <div class="story-text">
+            <h3>Astha and Chirag</h3>
+            <p>
+              Destination Wedding In Thailand Full Of Pretty Pinks & Florals!
+            </p>
+            <span>12 February 2024</span>
+          </div>
+        </div>
+
+        <div class="story-box">
+          <img
+            src="https://wallpaperaccess.com/full/2340918.jpg"
+            alt="Siddharth and Neelam"
+          />
+          <div class="story-text">
+            <h3>Siddharth Chopra and Neelam Upadhyay</h3>
+            <p>
+              Siddharth Chopra & Neelam Upadhyay's Wedding Was A Star-Studded
+              Affair!
+            </p>
+            <span>08 February 2025</span>
+          </div>
+        </div>
+
+        <div class="story-box">
+          <img
+            src="https://i.pinimg.com/originals/57/dc/4c/57dc4c8c5656c97404a4443ca5b7209f.jpg"
+            alt="Mawra and Ameer"
+          />
+          <div class="story-text">
+            <h3>Mawra Hocane and Ameer Gilani</h3>
+            <p>
+              Pakistani Actress Mawra Hocane's Wedding Photos Are Oozing Grace &
+              Regality.
+            </p>
+            <span>08 February 2025</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews">
+      <h2>Customer Reviews</h2>
+      <div class="review">
+        <p>
+          <strong>Aditi Sharma:</strong> Beautiful venue with amazing services!
+        </p>
+        <span>⭐️⭐️⭐️⭐️⭐️</span>
+      </div>
+      <div class="review">
+        <p><strong>Rahul Verma:</strong> Great ambiance and hospitality.</p>
+        <span>⭐️⭐️⭐️⭐️</span>
+      </div>
+      <div class="review">
+        <p><strong>Sakshi Sharma:</strong> Great place and services.</p>
+        <span>⭐️⭐️⭐️</span>
+      </div>
+      <div class="review">
+        <p><strong>Rohit Jha:</strong> Divine place.</p>
+        <span>⭐️⭐️⭐️⭐️</span>
+      </div>
+    </section>
+
+    <!-- Booking Form Section -->
+    <section class="booking-form">
+      <h2>Book This Venue</h2>
+      <form>
+        <input type="text" placeholder="Full Name" required />
+        <input type="email" placeholder="Email Address" required />
+        <input type="date" required />
+        <input type="number" placeholder="Number of Guests" required />
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+    <footer>
+      <div class="foot-panel1">Back to Top</div>
+      <div class="foot-panel2">
+        <ul>
+          <p><b>Get to Know Us</b></p>
+          <a>Careers</a>
+          <a>Blog</a>
+          <a>About Amazon</a>
+          <a>Investor Relations</a>
+          <a>Amazon Devices</a>
+          <a>Amazon Science</a>
+        </ul>
+        <ul>
+          <p><b>Amazon Payment Products</b></p>
+          <a>Amazon Business Card</a>
+          <a>Shop with Points</a>
+          <a>Reload Your Balance</a>
+          <a>Amazon Currency Converter</a>
+        </ul>
+        <ul>
+          <p><b>Make Money with Us</b></p>
+          <a>Sell products on Amazon</a>
+          <a>Sell on Amazon Business</a>
+          <a>Sell on Amazon App</a>
+          <a>Become an Affiliate</a>
+          <a>Advertise Your Products</a>
+          <a>Self-Publish with us</a>
+          <a>Self Publish with us</a>
+          <a>Host an Amazon Hub</a>
+        </ul>
+        <ul>
+          <p><b>Let Us Help You</b></p>
+          <a>Amazon and Covid-19</a>
+          <a>Your Account</a>
+          <a>Your Orders</a>
+          <a>Shipping Rates & Policies</a>
+          <a>Returns & Replacements</a>
+          <a>Manage Your Content and Devices</a>
+          <a>Amazon Assistant</a>
+          <a>Help</a>
+        </ul>
+      </div>
+
+      <div class="foot-panel3">
+        <div class="logo"></div>
+        <div class="languages border">
+          <i class="fa-solid fa-globe"></i>
+          <select class="content-world">
+            <option value="English">English</option>
+            <option value="Hindi">Hindi</option>
+            <option value="Japanese">Japanese</option>
+            <option value="Arabic">Arabic</option>
+            <option value="Chinese">Chinese</option>
+          </select>
+        </div>
+        <div class="currency border">
+          <a class="text">USD - U.S. Dollar</a>
+        </div>
+        <div class="usa">
+          <i class="fa-regular fa-flag"></i>
+          <a>United States</a>
+        </div>
+      </div>
+      <div class="foot-panel4">
+        <div class="pages">
+          <a>Conditions of Use</a>
+          <a>Privacy Notice</a>
+          <a>Your Ads Privacy Choices</a>
+        </div>
+        <div class="copyright">
+          © 1996-2024, Amazon.com, Inc. or its affiliates
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

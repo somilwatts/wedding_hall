@@ -1,0 +1,700 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* Navbar Styles */
+
+
+.top-section{
+    height: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #9c0f3e;
+    padding: 5px 10px;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.language-selector {
+    position: relative;
+    display: inline-block;
+  }
+  
+.language-selector select {
+    width: 220px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ff4f70;
+    border-radius: 8px;
+    background: white;
+    cursor: pointer;
+    color: #333;
+    font-weight: bold;
+    outline: none;
+    appearance: none;
+  }
+  
+  /* Custom dropdown arrow */
+  .language-selector::after {
+    content: "▼";
+    font-size: 14px;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #ff4f70;
+  }
+  
+  /* Option styling */
+  .language-selector select option {
+    font-size: 14px;
+    padding: 5px 10px;
+    color: #333;
+    background: white;
+  }
+  
+  /* Hover and focus effects */
+  .language-selector select:hover,
+  .language-selector select:focus {
+    border-color: #ff2d55;
+    box-shadow: 0px 0px 10px rgba(255, 47, 85, 0.5);
+  }
+  
+.cities {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .cities select {
+    width: 250px; /* Adjust width as needed */
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ff4f70;
+    border-radius: 8px;
+    background: white;
+    cursor: pointer;
+    color: #333;
+    font-weight: bold;
+    outline: none;
+    appearance: none; /* Remove default dropdown arrow */
+  }
+  
+  /* Style the dropdown arrow */
+  .cities::after {
+    content: "▼";
+    font-size: 14px;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #ff4f70;
+  }
+  
+  /* Dropdown options styling */
+  .cities select optgroup {
+    font-weight: bold;
+    font-size: 14px;
+    color: #ff4f70;
+    padding: 8px;
+    background: #ffecef;
+  }
+  
+  /* Individual option styling */
+  .cities select option {
+    font-size: 14px;
+    padding: 5px 10px;
+    color: #333;
+    background: white;
+  }
+  
+  /* Hover and focus effects */
+  .cities select:hover,
+  .cities select:focus {
+    border-color: #ff2d55;
+    box-shadow: 0px 0px 10px rgba(255, 47, 85, 0.5);
+  }
+  
+  /* Advanced: Aligning optgroup labels side by side */
+  .cities select optgroup::before {
+    content: attr(label);
+    display: block;
+    font-weight: bold;
+    color: #ff4f70;
+    padding: 5px 10px;
+    background: #ffecef;
+    border-bottom: 1px solid #ff4f70;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center; /* Aligns image and text in the same line */
+    gap: 10px; /* Adds spacing between image and text */
+}
+
+.logo img {
+    height: 40px; /* Adjust image size */
+    width: auto;
+    display: block;
+}
+
+.logo span {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Ensures all items are vertically aligned */
+    background-color: #e91e63;
+    padding: 10px 20px;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background: rgb(0, 0, 0);
+    top: 30px;
+    left: 0;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    padding: 10px;
+    width: 250px;
+}
+
+.nav-links li:hover .dropdown {
+    display: block;
+}
+
+.dropdown-section {
+    margin-bottom: 10px;
+}
+
+.dropdown-section h4 {
+    font-size: 14px;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+.dropdown-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.dropdown-section li {
+    padding: 5px 0;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero-mssg{
+    background-color: rgb(236, 241, 248);
+    color: black;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    font-size: 0.85rem;
+    bottom: 25px;
+    width: 95%;
+    margin-bottom: 25px;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-mssg a {
+    color: #007185;
+}
+
+.hero img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    filter: brightness(0.7);
+}
+
+.venue-info {
+    justify-content: space-evenly;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.venue-info h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.venue-info p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Venue Details */
+.venue-details {
+    padding: 40px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.venue-details h2 {
+    color: #e91e63;
+}
+
+/* Image Gallery */
+
+.gallery-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;  /* Adds white space between images */
+    max-width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #fff; /* Optional: Adds a white background */
+}
+
+.image-wrapper img {
+    width: 32%; /* Ensures three images fit in one row */
+    display: none;
+    object-fit: cover;
+    border-radius: 5px;
+    background-color: white; /* Ensures images have white padding */
+    padding: 5px; /* Small padding for extra spacing */
+}
+
+  
+  .image-wrapper img.active {
+    display: block;
+  }
+  
+  .wedding-categories {
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.categories-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.category-box {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+}
+
+.category-box img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.category-text h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.category-text p {
+    font-size: 14px;
+    color: #444;
+}
+
+.view-all {
+    display: block;
+    text-align: right;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #E91E63;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+  /* Navigation Buttons */
+  .prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    font-size: 20px;
+    border-radius: 50%;
+    z-index: 2;
+  }
+  
+  .prev-btn { left: 10px; }
+  .next-btn { right: 10px; }
+  
+  .prev-btn:hover, .next-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .wedding-stories {
+    width: 85%;
+    margin: auto;
+    text-align: left;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.stories-container {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    scrollbar-width: thin;
+    scrollbar-color: lightgray transparent;
+}
+
+.story-box {
+    min-width: 300px;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.story-box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.story-text {
+    padding: 15px;
+}
+
+.story-text h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.story-text p {
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 8px;
+}
+
+.story-text span {
+    font-size: 12px;
+    color: #777;
+}
+
+/* Reviews Section */
+.reviews {
+    padding: 20px;
+    background: white;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.review {
+    background: #f1f1f1;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/* Booking Form */
+.booking-form {
+    padding: 20px;
+    background: white;
+    margin: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.booking-form input, .booking-form button {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.booking-form button {
+    background: #e91e63;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.booking-form button:hover {
+    background: #d81b60;
+}
+
+footer{
+    margin-top: 15px;
+ }
+ 
+ .foot-panel1{
+     background-color: #37475a;
+     color: white;
+     height: 50px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 0.85rem;
+ }
+ 
+ .foot-panel2{
+     background-color: #222f3d;
+     color: white;
+     height: 400px;
+     display: flex;
+     justify-content: space-evenly;
+ }
+ 
+ ul{
+     margin-top: 20px;
+ }
+ 
+ ul a {
+     display: block;
+     font-size: 0.85rem;
+     margin-top: 10px;
+     color: #dddddd;
+ }
+ 
+ .foot-panel3{
+     background-color: #222f3d;
+     color: white;
+     border-top: 0.5px solid white;
+     height: 70px;
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+ }
+ 
+ .logo{
+     background-image: url("amazon_logo.png");
+     background-size: cover;
+     height: 50px;
+     width: 100px;
+ }
+ 
+ .logo:hover{
+     border: 1.5px solid white;
+ }
+ 
+ .foot-panel4{
+     background-color: #0f1111;
+     color: white;
+     height: 80px;
+ }
+ 
+ .pages {
+     font-size: 0.85rem;
+     text-align: center;
+     padding-top: 25px;
+ }
+ 
+ .copyright {
+     padding-top: 5px;
+     font-size: 0.7rem;
+     text-align: center;
+ }
+ 
+ .languages{
+     border-color: #dddddd;
+     text-align: center;
+     justify-content: space-evenly;
+     height: 50px;
+     width: 15%;
+     padding-left: 30px;
+ }
+ 
+ .content-world{
+     border: none;
+     font-size: 0.75rem;
+     background-color: #222f3d;
+     color: #ffff;
+     height: 50px;
+     width: 40%;
+ }
+ 
+ .currency{
+     font-size: 0.7rem;
+     display: flex;
+     height: 30px;
+     width: 18%;
+     border-color: #dddddd;
+     text-align: center;
+     justify-content: space-evenly;
+ }
+ 
+ .text{
+     text-align: center;
+     padding-top: 10px;
+ }
+ 
+ .usa{
+     font-size: 0.85rem;
+     display: flex;
+     height: 20px;
+     width: 10%;
+     justify-content: space-evenly;
+     border-color: #dddddd;
+ }
+ .marriage-section {
+    padding: 40px 0;
+    background-color: #f9f6f2;
+}
+
+.marriage-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500%;
+}
+
+.marriage-image-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    height: 50vh;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.marriage-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.marriage-image-wrapper:hover .marriage-img {
+    transform: scale(1.05);
+}
+
+.image-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    padding: 20px;
+    color: white;
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+}
+
+.marriage-image-wrapper:hover .image-overlay {
+    opacity: 1;
+}
+
+.overlay-title {
+    font-size: 2rem;
+    margin: 0 0 10px 0;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.overlay-text {
+    font-size: 1.1rem;
+    margin: 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    .marriage-image-wrapper {
+        height: 40vh;
+    }
+    
+    .overlay-title {
+        font-size: 1.5rem;
+    }
+    
+    .overlay-text {
+        font-size: 0.9rem;
+    }
+}
